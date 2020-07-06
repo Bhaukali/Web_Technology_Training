@@ -1,0 +1,63 @@
+
+<!-- HTML intial & CSS declaration -->
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>Bill Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+
+<!-- Body of the HTM -->
+
+<body>	
+<h1>Restaurant Bill Calculator</h1>
+
+	<div id="container">
+	Cusine:
+	<select name="list" id="itemlist">
+		<option>--Select Cusine--</option>
+		<option value="Idli Sambar">Idli Sambar</option>
+		<option value="Masala Dosa">Masala Dosa</option>
+		<option value="Rava Dosa">Rava Dosa</option>
+		<option value="Pulao">Pulao</option> 
+		<option value="Vada">Vada</option>
+	</select>
+	Quantity:
+	<select name="list" id="count" >
+		<option>--Select Quantity--</option>
+		<option value="1 Plate">1 Plate</option>
+		<option value="2 Plates">2 Plates</option>		
+		<option value="3 Plates">3 Plates</option>
+		<option value="4 Plates">4 Plates</option>
+		<option value="5 Plates">5 Plates</option>
+	</select>
+	<br>
+	<input type="button" id="entry" value="ADD">
+	</div>
+
+<!-- Table of the Body -->
+	<table id="display">
+		<thead>
+		<tr>
+			<th type="No" id="S_No">S.No</th>
+			<th type="text" id="Item">Cusine Name</th>
+			<th type="No" id="Price">Price</th>
+			<th type="No" id="Quantity">Quantity</th>
+			<th type="No" id="Total_Price">Total Price</th>
+		<tr>
+		</thead>
+		<tfoot>
+		<tr>
+			<td colspan="4">Grand Total</td>
+			<td type="No" id="Total Price"></td>
+		</tr>
+		</tfoot>
+	</table>
+
+<!-- Loading of JS script -->
+<script src="work.js"></script>
+</body>
+</html>
+
